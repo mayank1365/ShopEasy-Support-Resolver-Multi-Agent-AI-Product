@@ -6,7 +6,7 @@ A **multi-agent customer-support system** built with **LangGraph** and **Claude
 **human to approve** before anything is "sent". Abusive and out-of-scope messages
 are stopped by a **guardrail**.
 
-> Capstone for *Multi-Agent Orchestration [AI/ML]*. Team: **Mayank Gupta, Kumar Kartikey , Abhishek Kumar Shah**.
+> Capstone for *Multi-Agent Orchestration [AI/ML]*. Team: **Mayank Gupta, Kumar Kartikay , Abhishek Kumar Shah**.
 
 ---
 
@@ -160,7 +160,7 @@ The 3 agents map cleanly to the 3 members — each owns one agent **plus** a sys
 
 - **Mayank — Triage agent + LangGraph orchestration.** `triage_agent`, structured
   output, and the whole graph wiring/state/routing (`graph.py`, `state.py`, `schemas.py`).
-- **Kartikey — Retriever agent + RAG + evaluation + observability.** `retriever_agent`,
+- **Kartikay — Retriever agent + RAG + evaluation + observability.** `retriever_agent`,
   the knowledge base, the TF-IDF retriever (`rag.py`), the 5-case eval suite, and the
   LangSmith tracing setup (`src/llm.py`) + trace logs.
 - **Abhishek — Drafter agent + tools + guardrails + demo.** `drafter_agent` with

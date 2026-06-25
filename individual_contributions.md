@@ -13,7 +13,7 @@ This document outlines the specific contributions of each team member to the **S
 
 ---
 
-## 👤 Kumar Kartikey
+## 👤 Kumar Kartikay
 **Focus:** Retriever Agent, RAG Knowledge Base, Evaluation Suite, & Observability
 
 *   **RAG Knowledge Base & Retriever (`src/rag.py`, `src/knowledge_base/`):** Built the RAG system that loads and splits help documents (`refunds.md`, `shipping.md`, `billing.md`, `account_technical.md`) into sections, indexes them using TF-IDF, and retrieves top matching snippets using cosine similarity.
