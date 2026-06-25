@@ -34,15 +34,7 @@ lets us route differently per category (e.g. abuse never reaches the drafter).
 
 ## 3. Architecture
 
-```
-                          ┌─ abuse / out_of_scope ─► policy_response ─► END   (guardrail)
-   START ─► triage ─►(route)
-                          └─ billing / technical / refund ─► retrieve ─► draft ─► human_review
-                                                              (RAG)     (Claude    │  (interrupt)
-                                                                       + order_lookup)
-                                                          (route) ┌─ approve ─► send ─► END
-                                                                  └─ reject ──────────► END
-```
+![System Architecture](mermaid.png)
 
 | Agent / node | Role | Key technique |
 |---|---|---|
